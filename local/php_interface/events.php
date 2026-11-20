@@ -20,3 +20,8 @@ $eventManager->addEventHandler('', 'PantoneColorsOnBeforeAdd', [
     '\Otus\Hlblock\Event',
     'onBeforeElementAdd'
 ]);
+
+$eventManager->addEventHandler('main', 'OnBeforeProlog', [
+    '\Otus\Events\Main',
+    'beforePrologHandler',
+]);
